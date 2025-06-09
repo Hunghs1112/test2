@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App & User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Applications</h1>
+        
+        <!-- Todo App Section -->
+        <div class="app-section" id="todoApp">
+            <h2>Todo App</h2>
+            <div class="todo-filters">
+                <button class="filter-btn active" onclick="filterTodos('all')">All</button>
+                <button class="filter-btn" onclick="filterTodos('active')">Active</button>
+                <button class="filter-btn" onclick="filterTodos('completed')">Completed</button>
+            </div>
+            <div class="todo-input">
+                <input type="text" id="todoInput" placeholder="add details">
+                <button class="add-btn" onclick="addTodo()">Add</button>
+            </div>
+            <ul id="todoList"></ul>
+            <button class="delete-all-btn" onclick="clearAll()">delete all</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="users.js"></script>
+    <script src="posts.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
